@@ -7,7 +7,7 @@ data <- read.csv("household_power_consumption.txt",sep=";",na.strings="?",
 data <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 # create the graphics file
-png("plot1.png",height=480,width=480)
+png("Plot1.png",height=480,width=480)
 # create the histogram
 hist(data$Global_active_power,col="Red",main="Global Active Power",
      xlab="Global Active Power (kilowatts)")

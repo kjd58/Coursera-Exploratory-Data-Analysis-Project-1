@@ -12,7 +12,7 @@ data$Date_Time <- strptime(paste(data$Date, data$Time, sep=" "), "%d/%m/%Y %H:%M
 data <- subset(data, select=-c(Date,Time))
 
 # create the graphics file
-png("plot2.png",height=480,width=480)
+png("Plot2.png",height=480,width=480)
 # create the plot
 plot(data$Date_Time,data$Global_active_power,type="l", xlab="",
      ylab="Global Active Power (kilowatts)")

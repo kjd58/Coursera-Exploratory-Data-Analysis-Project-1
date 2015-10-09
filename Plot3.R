@@ -15,7 +15,7 @@ data <- subset(data, select=-c(Date,Time))
 
 
 # create the graphics file
-png("plot3.png",height=480,width=480)
+png("Plot3.png",height=480,width=480)
 # create the plot
 with(data, {
   plot(Sub_metering_1~Date_Time, type="l",
